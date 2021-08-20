@@ -1,5 +1,5 @@
 # http://editorconfig.org
-# 表示根目录下的所有文件适用该规则
+
 root = true
 
 [*] # 表示所有文件适用
