@@ -3,26 +3,27 @@
     "target": "esnext",
     "module": "esnext",
     "strict": true,
+    // 对jsx做什么样的操作preserve表示保留
     "jsx": "preserve",
     "importHelpers": true,
     "moduleResolution": "node",
+    // 跳过一些库的类型检测(eg:引入的第三方库)
     "skipLibCheck": true,
+    // 能不能进行混合使用(eg: module.exports和export default),该两个配置一起使用
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
+    // 要不要生成映射文件(TS-JS)
     "sourceMap": true,
+    // 文件在解析时,基本url
     "baseUrl": ".",
+    // 指定具体要解析的使用类型
     "types": ["webpack-env"],
+    // 编译阶段路径解析
     "paths": {
       "@/*": ["src/*"]
     },
     "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
   },
-  "include": [
-    "src/**/*.ts",
-    "src/**/*.tsx",
-    "src/**/*.vue",
-    "tests/**/*.ts",
-    "tests/**/*.tsx"
-  ],
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue", "tests/**/*.ts", "tests/**/*.tsx"],
   "exclude": ["node_modules"]
 }

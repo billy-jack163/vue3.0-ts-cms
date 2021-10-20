@@ -1,8 +1,9 @@
 {
   "useTabs": false,
   "tabWidth": 2,
-  "printWidth": 80,
   "singleQuote": true,
+  "printWidth": 100,
   "trailingComma": "none",
-  "semi": false
+  "semi": false,
+  "endOfLine": "auto"
 }
